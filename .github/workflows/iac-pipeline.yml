@@ -1,8 +1,12 @@
-# ... (viene de los pasos anteriores)
-  opa:
-    name: Analisis de gobernanza (OPA)
+name: "IaC Pipeline"
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-and-security:
     runs-on: ubuntu-latest
-    needs: checkov
     defaults:
       run:
         working-directory: terraform
@@ -10,14 +14,28 @@
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Run TFLint
+        uses: terraform-linters/setup-tflint@v4
+      - run: tflint
+
+      - name: Run Checkov
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: terraform/
+          framework: terraform
+          soft_fail: true
+
       - name: Setup OPA
         uses: open-policy-agent/setup-opa@v2
-        with:
-          version: latest
 
       - name: Run OPA Check
         run: |
-          terraform init
           terraform plan -out=tfplan.binary
           terraform show -json tfplan.binary > tfplan.json
           opa exec --decision terraform/analysis/allow --bundle ../opa/ tfplan.json
