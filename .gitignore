@@ -2,9 +2,7 @@
 *.tfstate
 *.tfstate.*
 *.tfvars
-crash.log
-plan.out
-plan.json
 *.pem
-*.key
-secrets.*
+*.lock.hcl
+README.md
+CHANGELOG.md
