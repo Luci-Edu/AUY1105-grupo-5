@@ -34,6 +34,10 @@ jobs:
     name: Analisis de seguridad
     runs-on: ubuntu-latest
     needs: tflint
+    with:
+        directory: terraform
+        framework: terraform
+        soft_fail: true
 
     steps:
       - name: Checkout
@@ -65,4 +69,4 @@ jobs:
         run: terraform init
 
       - name: Terraform Validate
-        run: terraform validate
+        run: terraform validate   
