@@ -4,3 +4,5 @@
 *.tfvars
 *.pem
 *.lock.hcl
+README.md
+CHANGELOG.md
