@@ -1,0 +1,32 @@
+name: "Terraform Lint and Security"
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  terraform-checks:
+    name: "TFLint and Checkov"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Init
+        run: terraform -chdir=terraform init
+
+      - name: Run TFLint
+        uses: terraform-linters/setup-tflint@v4
+        with:
+          tflint_version: v0.50.0
+      - run: tflint --chdir=terraform
+
+      - name: Run Checkov
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: terraform/
+          framework: terraform
