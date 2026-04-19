@@ -101,3 +101,19 @@ Ejemplo:
 ![OPA Success](imagenes/req4-opa-success.png)
 ![Policy Rego](imagenes/req4-policy-rego.png)
 ![Workflow Req4](imagenes/req4-workflow.png)
+
+
+5️⃣ Problemas detectados y soluciones aplicadas
+Problema detectado	Solución aplicada
+Error de indentación YAML	Corrección de estructura del workflow
+Bloque with: mal ubicado	Reubicación correcta dentro del step
+Pipeline fallando por hallazgos Checkov	Uso de soft_fail: true
+Error credenciales AWS	Ajuste del flujo para validación sin dependencia externa
+Conflictos Git entre ramas	Uso de pull --rebase y sincronización
+6️⃣ Conclusión
+
+La actividad permitió aplicar conceptos reales de DevOps e Infraestructura como Código mediante automatización CI/CD.
+
+Se logró trabajar colaborativamente con ramas Git, Pull Requests y revisión entre integrantes. Además, se integraron herramientas modernas de validación como Terraform, TFLint, Checkov y OPA.
+
+El resultado final fue un repositorio funcional con pipelines exitosos, buenas prácticas de versionamiento y controles automáticos de calidad y seguridad.
