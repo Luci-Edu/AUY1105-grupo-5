@@ -95,11 +95,11 @@ Ejemplo:
 
 ## Evidencias (Eduardo)
 
-![OPA Success](imagenes/req4-opa-success.png)
+![OPA Success](https://github.com/Luci-Edu/AUY1105-grupo-5/blob/main/imagenes/imagenesreq4-opa-success.jpeg?raw=true)
 
-![Policy Rego](imagenes/req4-policy-rego.png)
+![Policy Rego](https://github.com/Luci-Edu/AUY1105-grupo-5/blob/main/imagenes/req4-policy-rego.jpeg?raw=true)
 
-![Workflow Req4](imagenes/req4-workflow.png)
+![Workflow Req4](https://github.com/Luci-Edu/AUY1105-grupo-5/blob/main/imagenes/Workflow%20OPA.jpeg?raw=true)
 
 ---
 
