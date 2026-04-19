@@ -31,15 +31,15 @@ Se trabajó utilizando Git y GitHub mediante ramas colaborativas, commits versio
 
 ### Cambios iniciales del repositorio
 
-![Cambios base](imagenes/4 Cambios guardados de archivos base.png)
+![Cambios base](https://github.com/Luci-Edu/AUY1105-grupo-5/blob/main/imagenes/4%20Cambios%20guardados%20de%20archivos%20base.png?raw=true)
 
 ### Creación del Pull Request
 
-![Creación PR](imagenes/10 Creación PR.png)
+![Creación PR](https://github.com/Luci-Edu/AUY1105-grupo-5/blob/main/imagenes/10%20Creaci%C3%B3n%20PR.png?raw=true)
 
 ### Pull Request aprobado
 
-![PR aprobado](imagenes/20-req3-pr-aprobado.png)
+![PR aprobado](https://github.com/Luci-Edu/AUY1105-grupo-5/blob/main/imagenes/20-req3-pr-aprobado.png?raw=true)
 
 ---
 
@@ -65,19 +65,19 @@ El flujo ejecuta:
 
 ### Configuración del pipeline YAML
 
-![Pipeline YAML](imagenes/7 req3-configuracion-pipeline.yml.png)
+![Pipeline YAML](https://github.com/Luci-Edu/AUY1105-grupo-5/blob/main/imagenes/7%20req3-configuracion-pipeline.yml.png?raw=true)
 
 ### Configuración de Checkov
 
-![Checkov](imagenes/15 req3-configuracion-checkov.png)
+![Checkov](https://github.com/Luci-Edu/AUY1105-grupo-5/blob/main/imagenes/15%20req3-configuracion-checkov.png?raw=true)
 
 ### Ejecución exitosa del pipeline
 
-![Pipeline exitoso](imagenes/18 req3-pipeline-PR-ejecucion-exitosa.png)
+![Pipeline exitoso](https://github.com/Luci-Edu/AUY1105-grupo-5/blob/main/imagenes/18%20req3-pipeline-PR-ejecucion-exitosa.png?raw=true)
 
 ### Pull Request cerrado correctamente
 
-![PR cerrado](imagenes/19 PR Cerrado.png)
+![PR cerrado](https://github.com/Luci-Edu/AUY1105-grupo-5/blob/main/imagenes/19%20PR%20Cerrado.png?raw=true)
 
 ---
 
