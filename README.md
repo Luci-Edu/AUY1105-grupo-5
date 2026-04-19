@@ -95,22 +95,27 @@ Ejemplo:
 
 ## Evidencias (Eduardo)
 
-> Agregar aquí imágenes del requerimiento 4:
-
-```md
 ![OPA Success](imagenes/req4-opa-success.png)
+
 ![Policy Rego](imagenes/req4-policy-rego.png)
+
 ![Workflow Req4](imagenes/req4-workflow.png)
 
+---
 
-5️⃣ Problemas detectados y soluciones aplicadas
-Problema detectado	Solución aplicada
-Error de indentación YAML	Corrección de estructura del workflow
-Bloque with: mal ubicado	Reubicación correcta dentro del step
-Pipeline fallando por hallazgos Checkov	Uso de soft_fail: true
-Error credenciales AWS	Ajuste del flujo para validación sin dependencia externa
-Conflictos Git entre ramas	Uso de pull --rebase y sincronización
-6️⃣ Conclusión
+## 5️⃣ Problemas detectados y soluciones aplicadas
+
+| Problema detectado | Solución aplicada |
+|---|---|
+| Error de indentación YAML | Corrección de estructura del workflow |
+| Bloque `with:` mal ubicado | Reubicación correcta dentro del step |
+| Pipeline fallando por hallazgos Checkov | Uso de `soft_fail: true` |
+| Error de credenciales AWS | Ajuste del flujo para validación sin dependencia externa |
+| Conflictos Git entre ramas | Uso de `git pull --rebase` y sincronización |
+
+---
+
+## 6️⃣ Conclusión
 
 La actividad permitió aplicar conceptos reales de DevOps e Infraestructura como Código mediante automatización CI/CD.
 
