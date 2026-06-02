@@ -6,9 +6,8 @@ provider "aws" {
   skip_region_validation      = true
 }
 
-# Modulo de Redes (VPC)
 module "network" {
-  source = "github.com/Luci-Edu/terraform-aws-vpc-auy1105-grupo-5"
+  source = "github.com/Luci-Edu/terraform-aws-vpc-auy1105-grupo-5?ref=v1.0.0"
 
   vpc_name             = "AUY1105-grupo5-vpc"
   cidr_block           = "10.1.0.0/16"
@@ -23,9 +22,8 @@ module "network" {
   }
 }
 
-# Modulo de Computo (EC2)
 module "compute" {
-  source = "github.com/Luci-Edu/terraform-aws-ec2-auy1105-grupo-5"
+  source = "github.com/Luci-Edu/terraform-aws-ec2-auy1105-grupo-5?ref=v1.0.0"
 
   instance_name = "AUY1105-grupo5-ec2"
   instance_type = "t2.micro"
@@ -40,9 +38,8 @@ module "compute" {
   }
 }
 
-# Modulo de Almacenamiento (S3)
 module "storage" {
-  source = "github.com/Luci-Edu/terraform-aws-s3-auy1105-grupo-5"
+  source = "github.com/Luci-Edu/terraform-aws-s3-auy1105-grupo-5?ref=v1.0.0"
 
   bucket_name        = "auy1105-grupo5-bucket-dev"
   environment        = "dev"
