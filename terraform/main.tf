@@ -10,13 +10,12 @@ module "network" {
   source = "github.com/Luci-Edu/terraform-aws-vpc-auy1105-grupo-5?ref=v1.0.0"
 
   vpc_name             = "AUY1105-grupo5-vpc"
-  cidr_block           = "10.1.0.0/16"
+  vpc_cidr             = "10.1.0.0/16"
   public_subnet_cidrs  = ["10.1.1.0/24"]
   private_subnet_cidrs = ["10.1.10.0/24"]
   availability_zones   = ["us-east-1a"]
-  environment          = "dev"
 
-  tags_extra = {
+  tags = {
     Proyecto = "AUY1105"
     Grupo    = "5"
   }
